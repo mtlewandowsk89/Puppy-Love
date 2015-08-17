@@ -1,0 +1,299 @@
+/****************************************
+	Inherited Styles
+****************************************/ 
+
+*, *::before, *::after {
+	box-sizing: inherit;
+	color: inherit;
+}
+
+/****************************************
+	Defaults
+****************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Open Sans;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	display: inline-block;
+	font-family: Lobster;
+	color: white;
+	font-size: 40pt;
+}
+
+button {
+	border: none;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	font-size: 18pt;
+}
+
+/****************************************
+	Layout
+****************************************/
+
+/*** Hero ***/
+
+.panel.hero {
+	background: radial-gradient(rgba(20, 100, 100, 0.5), rgba(0, 125, 150, 0.9)), url("bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 550px;
+}
+
+.panel > div {
+	width: 960px;
+	min-height: 550px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.panel, .panel > div, .primary-nav, .primary-nav a, .primary-header, div.banner {
+	background-color: none;
+}
+
+/*** Header ***/
+
+.primary-header {
+	position: relative;
+}
+
+.primary-header form {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+
+.primary-input {
+	background: transparent;
+	border: 2px solid white;
+	min-width: 250px;
+	min-height: 30px;
+	opacity: 0.5;
+}
+
+.primary-search {
+	background-color: #EB4F01;
+	color: #FFFFFF;
+	border: 1px solid #EB4F01;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+/*** Nav ***/
+
+.primary-nav {
+	position: absolute
+	bottom 0px;
+	text-align: center;
+	border-top: solid 1px rgba(255, 255, 255, 0.3);
+	border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+	margin: 0, 300px;
+}
+
+.primary-nav a {
+	padding: 10px;   
+	display: inline-block;
+	margin: 0px 10px;
+	color: white;
+	text-decoration: none;
+}
+
+/*** Banner ***/
+
+.banner {
+	text-align: center;
+	position: absolute;
+	bottom:40px;
+	width: 960px;
+}
+
+.banner p:first-child {
+	font-size: 30pt;
+}
+
+.banner p {
+	color: white;
+	font-size: 13pt;
+}
+
+/****************************************
+	Components
+****************************************/
+
+/*** Tiles ***/
+
+.content, .content > div{
+	background-color: #D7E1E7;
+	min-height: 850px;
+}
+
+.content-box {
+	box-shadow: 0px 0px 10px -3px black;
+}
+
+.puppy-tiles {
+	background-color: #D7E1E7;
+	margin: 0 auto;
+	min-height: 150px;
+	padding: 5px;
+}
+
+.puppy-tile {
+	height: 200px;
+	background-color: #fff;
+	width: calc(33% - 10px);
+	margin: 5px;
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+	transform: translateY(-30px);
+}
+
+.puppy-tile:first-child {
+	border-top: 4px solid #F44000;
+}
+
+.puppy-tile:nth-child(2) {
+	border-top: 4px solid #88D023;
+}
+
+.puppy-tile:last-child {
+	border-top: 4px solid #008AD7;
+}
+
+.puppy-tile p {
+	margin-bottom: 10px;
+}
+
+.food {
+	border: 2px solid #B1E076;
+	color: #B1E076;
+}
+
+.help {
+	border: 2px solid #F28853;
+	color: #F28853;
+}
+
+.sell {
+	border: 2px solid #53B5E3;
+	color: #53B5E3;
+}
+
+.primary-products {
+	height: 550px;
+	overflow: hidden;
+}
+
+/*** Aside media objects ***/
+
+.profile-puppies {
+	background-color: #FFFFFF;
+	float: left;
+	width: 400px;
+	height: 550px;
+	padding: 5px;
+}
+
+.profile-media-object {
+	height: 110px;
+	margin: 10px;
+	max-width: 400px;
+}
+
+.profile-graphic {
+	float: left;
+	width: 110px;
+	height: 110px;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 110px;
+}
+
+.Ralf {
+	background-image: url("dog1.png");
+}
+
+.Max {
+	background-image: url("dog2.png");
+}
+
+.Rudy {
+	background-image: url("dog3.png");
+}
+
+.profile-text {
+	margin-left: 100px;
+	height: 110px;
+	padding-left: 20px;
+}
+
+.profile-text p, .gallery p{
+	margin: 0;
+}
+
+.profile-text p:first-child {
+	color: #2D9BD9;
+	font-size: 16pt;
+}
+
+.profile-text p:last-child {
+	font-size: 14pt;
+}
+
+.profile-text, .profile-media-object, .gallery-object {
+	background-color: #E7F2F8;
+}
+
+/*** Main gallery tiles ***/
+
+.gallery {
+	background-color: #FFFFFF;
+	height: 550px;
+	margin-left: 350px;
+}
+
+.gallery-object {
+	overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+    width: calc(28% - 10px);
+    min-height: 150px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.alt {
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 150px;
+}
+
+.gallery-name {
+	background-color: #8CD133;
+	color: #52790B;
+	font-size: 14pt;
+	padding: 3px;
+}
+
+.gallery-description {
+	color: #5A7020;
+	font-size: 12pt;
+	padding: 3px;
+}
+
+
